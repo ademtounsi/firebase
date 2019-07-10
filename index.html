@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <fieldset>
+                <legend>Subscribe</legend>
+                <form id = "subscribe-form">
+                    <div class="input-block">
+                        <label for="name">Name :</label>
+                        <input autocomplete="off" type="text" name = "name" id = "name">
+                        <div class="line"></div>
+                    </div>
+                    <div class="input-block">
+                        <label for="email">Email :</label>
+                        <input autocomplete="off" type="email" name = "email" id = "email">
+                        <div class="line"></div>
+                    </div>
+                    <div class="input-block">
+                        <label for="phone">Phone Number :</label>
+                        <input autocomplete="off" type="number" name = "phone" id = "phone">
+                        <div class="line"></div>
+                    </div>
+                    <div class="input-block">
+                        <label for="school">Uni/School :</label>
+                        <input autocomplete="off" type="text" name = "school" id = "school">
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="input-block">
+                        <label class = "label" for="course">Course :</label>
+                        <select name="course" id="course">
+                            <option class = "option" value="web development">Web Development</option>
+                            <option value="mobile development">Mobile Development</option>
+                            <option value="game development">Game Development</option>
+                            <option value="full stack js">Full Stack JS</option>
+                            <option value="data science">Data Science</option>
+                        </select>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="button-container">
+                        <input type="submit" class = "button" value = "subscribe" >
+                    </div>
+                </form>
+            </fieldset> 
+            
+        </div>
+        <div class="container-2"></div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+<script src = "js/main.js"></script>
+<script src = "functions.js"></script>
+<script src = "myfirebase.js"></script>
+</html>

@@ -1,0 +1,163 @@
+*{
+    padding : 0 ;
+    margin : 0 ;
+}
+
+body{
+    background-image: linear-gradient(135deg , #ff1100 , #03032f) ;
+    height : 100vh ;
+    overflow: hidden;
+}
+
+.container{
+    height : 535px ;
+    width : 400px ;
+    /* background-color: red ; */
+    background: linear-gradient(45deg , rgb(197, 200, 23) , rgb(65, 56, 56) , rgb(54, 54, 54) ) ;
+    margin-left : auto ;
+    margin-right: auto ;
+    margin-top : 30px ;
+    box-shadow: 1px 1px 5px black ;
+    padding-top : 1px ;
+}
+
+
+.container fieldset{
+    border-radius: 15px ;
+    border-width: 3px ;
+    border-color: #3c00ff;
+    margin-top : 25px ;
+    width : 85% ;
+    margin-left : auto ;
+    margin-right : auto ;
+    height : 90% ;
+}
+
+.container fieldset legend{
+    color : white ;
+    font-weight: bolder ;
+    font-family: cursive ;
+    margin-left : 15px ;
+    font-size: 25px ;
+}
+
+.button-container{
+    width : 100% ;
+}
+
+.button{
+    color : white ;
+    font-family: cursive ;
+    font-weight: bold ;
+    font-size: 18px ;
+    margin-top : 10px ;
+    height : 33px ; 
+    width : 230px ;
+    border : none ;
+    background-color: #0e3edd ;
+    margin-left : auto ;
+    margin-right :  auto ;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.container:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}   
+
+.container-shake{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.input-block{
+    /* background-color : red ; */
+    margin : 15px ;
+    width : 230px ;
+    padding-left : 25px ;
+}
+
+.input-block label , input{
+    display : block ;
+    font-family: cursive ;
+    font-weight : bold ;
+    margin : 5px ;
+    margin-right : 0 ;
+    color : black ;
+    margin-bottom: 0 ;
+    margin-left : 0 ;
+    border : none ;
+    width : 223px ;
+    padding-left : 7px ;
+}
+
+.input-block label{
+    color: white ;
+}
+
+.input-block input{
+    height : 30px ;
+    background-color: rgb(73, 73, 73) ;
+}
+
+.line{
+    background-color: #ff0800 ;
+    height : 3px ;
+    width : 0% ;
+    transition: 1s ;
+}
+
+.input-block input:focus + .line{
+    background-color: #fffb00 ;
+    transition: 1s ;
+    width : 100% ;
+}
+
+.input-block select{
+    background-color :  rgb(80, 75, 75) ;
+    margin-top : 5px ;
+    width : 100% ;
+    border : none ;
+    height : 30px ;
+    color : white ;
+    font-family: cursive ;
+    font-weight: bold ;
+}
+
+option{
+    background-color :  rgb(116, 69, 69) ;
+    border : none ;
+    height : 30px ;
+    color : white ;
+    font-family: cursive ;
+    font-weight: bold ;
+}
